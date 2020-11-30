@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5661FCA2568538500D11D42 /* DetialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5661FC92568538500D11D42 /* DetialsView.swift */; };
 		B5729CFE256812EA0031ADDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5729CFD256812EA0031ADDE /* AppDelegate.swift */; };
 		B5729D00256812EA0031ADDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5729CFF256812EA0031ADDE /* SceneDelegate.swift */; };
 		B5729D02256812EA0031ADDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5729D01256812EA0031ADDE /* ContentView.swift */; };
 		B5729D04256812EB0031ADDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5729D03256812EB0031ADDE /* Assets.xcassets */; };
 		B5729D07256812EB0031ADDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5729D06256812EB0031ADDE /* Preview Assets.xcassets */; };
 		B5729D0A256812EB0031ADDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5729D08256812EB0031ADDE /* LaunchScreen.storyboard */; };
+		B588FC1E25683EA20019C02D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588FC1D25683EA20019C02D /* NetworkManager.swift */; };
+		B588FC2025683ED20019C02D /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588FC1F25683ED20019C02D /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5661FC92568538500D11D42 /* DetialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetialsView.swift; sourceTree = "<group>"; };
 		B5729CFA256812EA0031ADDE /* Hacker News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5729CFD256812EA0031ADDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5729CFF256812EA0031ADDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		B5729D06256812EB0031ADDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5729D09256812EB0031ADDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5729D0B256812EB0031ADDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B588FC1D25683EA20019C02D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B588FC1F25683ED20019C02D /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5661FC82568535300D11D42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5729D01256812EA0031ADDE /* ContentView.swift */,
+				B5661FC92568538500D11D42 /* DetialsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B5729CF1256812EA0031ADDE = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +71,10 @@
 		B5729CFC256812EA0031ADDE /* Hacker News */ = {
 			isa = PBXGroup;
 			children = (
+				B588FC1C25683E730019C02D /* Model */,
+				B5661FC82568535300D11D42 /* Views */,
 				B5729CFD256812EA0031ADDE /* AppDelegate.swift */,
 				B5729CFF256812EA0031ADDE /* SceneDelegate.swift */,
-				B5729D01256812EA0031ADDE /* ContentView.swift */,
 				B5729D03256812EB0031ADDE /* Assets.xcassets */,
 				B5729D08256812EB0031ADDE /* LaunchScreen.storyboard */,
 				B5729D0B256812EB0031ADDE /* Info.plist */,
@@ -73,6 +89,15 @@
 				B5729D06256812EB0031ADDE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B588FC1C25683E730019C02D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B588FC1D25683EA20019C02D /* NetworkManager.swift */,
+				B588FC1F25683ED20019C02D /* PostData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B588FC2025683ED20019C02D /* PostData.swift in Sources */,
+				B5661FCA2568538500D11D42 /* DetialsView.swift in Sources */,
+				B588FC1E25683EA20019C02D /* NetworkManager.swift in Sources */,
 				B5729CFE256812EA0031ADDE /* AppDelegate.swift in Sources */,
 				B5729D00256812EA0031ADDE /* SceneDelegate.swift in Sources */,
 				B5729D02256812EA0031ADDE /* ContentView.swift in Sources */,
